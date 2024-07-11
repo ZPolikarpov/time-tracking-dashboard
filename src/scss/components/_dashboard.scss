@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.dashboard {
+  display: grid;
+  padding-block: $size-12;
+  row-gap: $size-6;
+}
