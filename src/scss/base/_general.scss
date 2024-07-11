@@ -3,9 +3,9 @@
 body {
   font-family: $body-font-family;
   font-weight: $body-font-weight;
-  font-size: $body-font-size;
-  color: $body-text-color;
-  background-color: $body-background-color;
+  font-size: fs(400);
+  color: clr(neutral, 100);
+  background-color: clr(neutral,900);
   line-height: $body-line-height;
 }
 
