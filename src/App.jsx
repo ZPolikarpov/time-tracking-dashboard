@@ -6,7 +6,7 @@ function App() {
   const [timeframe, setTimeframe] = useState("daily")
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("/data.json")
+    fetch("data.json")
       .then((oResponse) => {
         return oResponse.json();
       })

@@ -6,6 +6,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [
     react(),
-    htmlPurge([htmlPurge()]),
+    //PurgeCss deletes the second data on card [data-category]. No idea what's happening and don't want to study purgecss as of now
+    // htmlPurge([htmlPurge()]),
   ],
+  base:'/time-tracking-dashboard/',
 })
