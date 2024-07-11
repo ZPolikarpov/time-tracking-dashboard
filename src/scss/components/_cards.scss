@@ -10,7 +10,7 @@
 
   width: 327px;
 
-  @include mq(small) {
+  @include mq(medium) {
     width: 255px;
   }
 
@@ -22,6 +22,10 @@
     padding: $card-padding;
     background-color: $card-background-default;
     border-radius: $card-border-radius;
+
+    @include mq(large) {
+      padding: 1.875rem;
+    }
   }
 
   &__header {
@@ -69,6 +73,10 @@
 
 .card[data-type="activity"] {
   padding-block-start: $card-colorstrip-size;
+
+  @include mq(large) {
+    padding-block-start: calc($card-colorstrip-size * 1.184);
+  }
 
   .card__body{
     flex-wrap: wrap;

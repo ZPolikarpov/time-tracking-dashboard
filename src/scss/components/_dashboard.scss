@@ -4,9 +4,16 @@
   display: grid;
   justify-items: center;
   justify-content: center;
+  margin-inline: auto;
   padding-block: $size-12;
   row-gap: $size-6;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, min(327px, 100%));
+  column-gap: 1.875rem;
+  max-width: 70rem;
+
+  @include mq(medium) {
+    grid-template-columns: repeat(auto-fit, min(255px, 100%));
+  }
 
   @include mq(medium) {
     .card[data-type="profile"] {
