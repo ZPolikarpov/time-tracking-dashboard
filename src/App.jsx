@@ -25,7 +25,7 @@ function App() {
               <img className="avatar" src={img_jeremy} alt="Portrait of a smiling man" />
               <div>
                 <p className="fs-300">Report for</p>
-                <h2 className="heading-2 | fw-light margin-block-start-1">Jeremy Robson</h2>
+                <h2 className="heading-2 | fw-light margin-block-start-2">Jeremy Robson</h2>
               </div>
             </div>
             <div className="card__body">
@@ -46,8 +46,8 @@ function App() {
                     <button className="button" data-type="transparent"><img src={icon_ellipsis} alt="Details Button" /></button>
                   </div>
                   <div className="card__body">
-                    <h1 className="heading-1">{oCategory.timeframes[timeframe].current}hrs</h1>
-                    <p>Last Week - {oCategory.timeframes[timeframe].previous}hrs</p>
+                    <h1 className="heading-1 | fw-light">{oCategory.timeframes[timeframe].current}hrs</h1>
+                    <p className="fs-300">Last Week - {oCategory.timeframes[timeframe].previous}hrs</p>
                   </div>
                 </div>
               </div>

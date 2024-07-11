@@ -8,8 +8,10 @@
   line-height: $card-line-height;
   border-radius: $card-border-radius;
 
+  width: 327px;
+
   @include mq(small) {
-    max-width: 255px;
+    width: 255px;
   }
 
   &__heading {
@@ -41,6 +43,14 @@
     padding: 2.125rem;
     background-color: $color-primary-500;
     border-radius: $card-border-radius;
+    
+    @include mq(medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: $size-9;
+    }
+
 
     & .avatar {
       --border-width: 0.25rem;
@@ -59,6 +69,11 @@
 
 .card[data-type="activity"] {
   padding-block-start: $card-colorstrip-size;
+
+  .card__body{
+    flex-wrap: wrap;
+    gap: $size-2
+  }
 
   &[data-category="Work"] {
     background-image: url("./src/assets/images/icon-work.svg");

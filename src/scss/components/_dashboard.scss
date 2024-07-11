@@ -2,6 +2,15 @@
 
 .dashboard {
   display: grid;
+  justify-items: center;
+  justify-content: center;
   padding-block: $size-12;
   row-gap: $size-6;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+
+  @include mq(medium) {
+    .card[data-type="profile"] {
+      grid-row: span 2;
+    }
+  }
 }
