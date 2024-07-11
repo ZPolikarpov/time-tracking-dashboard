@@ -2,7 +2,6 @@
 
 .card {
   display: grid;
-  padding-block-start: $card-colorstrip-size;
   background-color: $card-background-default;
   font-family: $card-font-family;
   color: $card-color-default;
@@ -12,6 +11,56 @@
   @include mq(small) {
     max-width: 255px;
   }
+
+  &__heading {
+    @include heading($card-heading-font-size, $card-heading-color-default);
+  }
+
+  &__inner {
+    padding: $card-padding;
+    background-color: $card-background-default;
+    border-radius: $card-border-radius;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.375rem;
+  }
+}
+
+.card[data-type="profile"] {
+  .card__header {
+    padding: 2.125rem;
+    background-color: $color-primary-500;
+    border-radius: $card-border-radius;
+
+    & .avatar {
+      --border-width: 0.25rem;
+      --image-width: 4rem;
+
+      max-width: calc(var(--image-width) + var(--border-width) * 2);
+      border: var(--border-width) solid $color-neutral-000;
+      border-radius: 50%;
+    }
+  }
+  .card__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.375rem;
+  }
+}
+
+.card[data-type="activity"] {
+  padding-block-start: $card-colorstrip-size;
 
   &[data-category="Work"] {
     background-image: url("./src/assets/images/icon-work.svg");
@@ -53,28 +102,5 @@
     background-repeat: no-repeat;
     background-position: 93% -15%;
     background-color: clr("primary", "300");
-  }
-
-  &__heading {
-    @include heading($card-heading-font-size, $card-heading-color-default);
-  }
-
-  &__inner {
-    padding: $card-padding;
-    background-color: $card-background-default;
-    border-radius: $card-border-radius;
-  }
-
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0.375rem;
   }
 }
