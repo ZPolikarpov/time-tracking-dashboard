@@ -2,14 +2,61 @@
 
 .card {
   display: grid;
-  padding: $card-padding;
+  padding-block-start: $card-colorstrip-size;
   background-color: $card-background-default;
   font-family: $card-font-family;
   color: $card-color-default;
   line-height: $card-line-height;
   border-radius: $card-border-radius;
 
+  @include mq(small) {
+    max-width: 255px;
+  }
+
+  &[data-category="Work"] {
+    background-color: clr("primary", "250")
+  }
+
+  &[data-category="Play"] {
+    background-color: clr("primary", "150")
+  }
+
+  &[data-category="Study"] {
+    background-color: clr("primary", "200")
+  }
+
+  &[data-category="Exercise"] {
+    background-color: clr("primary", "400")
+  }
+
+  &[data-category="Social"] {
+    background-color: clr("primary", "550")
+  }
+
+  &[data-category="Self Care"] {
+    background-color: clr("primary", "300")
+  }
+
   &__heading {
     @include heading($card-heading-font-size, $card-heading-color-default);
+  }
+
+  &__inner {
+    padding: $card-padding;
+    background-color: $card-background-default;
+    border-radius: $card-border-radius;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.375rem;
   }
 }

@@ -24,4 +24,16 @@
       color: $button-primary-color-hover;
     }
   }
+
+  &[data-type="transparent"] {
+    background-color: transparent;
+    color: $button-primary-color;
+    border: 0;
+    padding: 0;
+
+    &:is(:hover, :focus) {
+      background-color: transparent;
+      color: $button-primary-color-hover;
+    }
+  }
 }

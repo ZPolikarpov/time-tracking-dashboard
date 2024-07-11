@@ -3,7 +3,7 @@
 @use "sizes" as *;
 @use "functions" as *;
 
-$active-theme: $light;
+$active-theme: $colors;
 $enable-media-query-dark-mode: false;
 
 // Contextual
@@ -33,7 +33,7 @@ $heading-color-default: $color-neutral-000;
 $heading-font-weight: $font-weight-medium;
 $heading-letter-spacing: $letter-spacing-loose;
 $heading-line-height: 1;
-$heading-text-transform: uppercase;
+$heading-text-transform: none;
 
 $heading-1-font-size: $font-size-900;
 $heading-1-color: $heading-color-default;
@@ -68,7 +68,8 @@ $button-primary-color-hover: $color-text-interactive-hover;
 $button-primary-background-hover: transparent;
 
 // cards
-$card-padding: $size-6 $size-7;
+$card-colorstrip-size: 2.375rem;
+$card-padding: $size-7 $size-6;
 $card-border-radius: $border-radius-1;
 $card-background-default: $color-neutral-800;
 $card-color-default: $color-neutral-100;
