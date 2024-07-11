@@ -28,9 +28,12 @@ function App() {
             </div>
           </div>
           <div className="card__body">
-            <button data-type="transparent" className="button | capitalize" onClick={() => {setTimeframe("daily")}}>Daily</button>
-            <button data-type="transparent" className="button | capitalize" onClick={() => {setTimeframe("weekly")}}>Weekly</button>
-            <button data-type="transparent" className="button | capitalize" onClick={() => {setTimeframe("monthly")}}>Monthly</button>
+            <button className="button | capitalize" data-type="transparent" data-active={timeframe === "daily"}
+              onClick={() => {setTimeframe("daily")}}>Daily</button>
+            <button className="button | capitalize" data-type="transparent" data-active={timeframe === "weekly"}
+              onClick={() => {setTimeframe("weekly")}}>Weekly</button>
+            <button className="button | capitalize" data-type="transparent" data-active={timeframe === "monthly"}
+              onClick={() => {setTimeframe("monthly")}}>Monthly</button>
           </div>
         </div>
         { 
