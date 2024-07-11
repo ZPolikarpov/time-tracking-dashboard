@@ -43,7 +43,7 @@ function App() {
                 <div className="card__inner">
                   <div className="card__header">
                     <h3 className="card__heading">{oCategory.title}</h3>
-                    <button className="button" data-type="transparent"><img src={icon_ellipsis} alt="Details Button" /></button>
+                    <button className="button | hover-white" data-type="transparent"><img src={icon_ellipsis} alt="Details Button" /></button>
                   </div>
                   <div className="card__body">
                     <h1 className="heading-1 | fw-light">{oCategory.timeframes[timeframe].current}hrs</h1>

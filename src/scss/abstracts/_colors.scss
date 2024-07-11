@@ -1,6 +1,7 @@
 $-clr-white: white;
 $-clr-very-darkblue: hsl(226, 43%, 10%);
 $-clr-darkblue: hsl(235, 46%, 20%);
+$-clr-darkblue-hover: hsl(236, 41%, 34%);
 $-clr-desaturated-blue: hsl(235, 45%, 61%);
 $-clr-pale-blue: hsl(236, 100%, 87%);
 $-clr-blue: hsl(193, 38%, 86%);
@@ -17,6 +18,7 @@ $colors: (
     "000": $-clr-white,
     "100": $-clr-pale-blue,
     "400": $-clr-desaturated-blue,
+    "500": $-clr-darkblue-hover,
     "800": $-clr-darkblue,
     "900": $-clr-very-darkblue
   ),
@@ -36,6 +38,7 @@ $colors: (
 $color-neutral-000: var(--neutral-000);
 $color-neutral-100: var(--neutral-100);
 $color-neutral-400: var(--neutral-400);
+$color-neutral-500: var(--neutral-500);
 $color-neutral-800: var(--neutral-800);
 $color-neutral-900: var(--neutral-900);
 

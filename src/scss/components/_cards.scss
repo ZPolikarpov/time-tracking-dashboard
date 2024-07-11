@@ -23,8 +23,17 @@
     background-color: $card-background-default;
     border-radius: $card-border-radius;
 
+    &:is(:hover,:focus) {
+      cursor: pointer;
+      background-color: $card-background-hover;
+
+      &:has(.hover-white:is(:hover, :focus)) {
+        background-color: $card-background-default;
+      }
+    }
+
     @include mq(large) {
-      padding: 1.875rem;
+      padding: $size-8;
     }
   }
 
@@ -38,7 +47,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0.375rem;
   }
 }
 
@@ -50,7 +58,7 @@
     
     @include mq(medium) {
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: flex-start;
       gap: $size-9;
     }
@@ -60,6 +68,10 @@
       --border-width: 0.25rem;
       --image-width: 4rem;
 
+      @include mq(medium) {
+        --image-width: 4.875rem;
+      }
+
       max-width: calc(var(--image-width) + var(--border-width) * 2);
       border: var(--border-width) solid $color-neutral-000;
       border-radius: 50%;
@@ -68,6 +80,13 @@
   .card__body {
     justify-content: space-around;
     padding-block: $size-6;
+
+    @include mq(large) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: $size-8;
+      gap: $size-5
+    }
   }
 }
 
@@ -80,7 +99,12 @@
 
   .card__body{
     flex-wrap: wrap;
-    gap: $size-2
+    gap: $size-2;
+    margin-top: 0.375rem;
+    
+    @include mq(large) {
+      margin-top: $size-6;
+    }
   }
 
   &[data-category="Work"] {
@@ -88,6 +112,10 @@
     background-repeat: no-repeat;
     background-position: 93% -15%;
     background-color: clr("primary", "250");
+
+    @include mq(medium) {
+      background-position: 90% -10%;
+    }
   }
 
   &[data-category="Play"] {
@@ -95,6 +123,10 @@
     background-repeat: no-repeat;
     background-position: 93% -5%;
     background-color: clr("primary", "150");
+
+    @include mq(medium) {
+      background-position: 90% -5%;
+    }
   }
 
   &[data-category="Study"] {
@@ -102,6 +134,10 @@
     background-repeat: no-repeat;
     background-position: 93% -5%;
     background-color: clr("primary", "200");
+
+    @include mq(medium) {
+      background-position: 90% -7%;
+    }
   }
 
   &[data-category="Exercise"] {
@@ -109,6 +145,10 @@
     background-repeat: no-repeat;
     background-position: 93% -5%;
     background-color: clr("primary", "400");
+
+    @include mq(medium) {
+      background-position: 90% 0%;
+    }
   }
 
   &[data-category="Social"] {
@@ -116,6 +156,10 @@
     background-repeat: no-repeat;
     background-position: 93% -30%;
     background-color: clr("primary", "550");
+
+    @include mq(medium) {
+      background-position: 90% -15%;
+    }
   }
 
   &[data-category="Self Care"] {
@@ -123,5 +167,9 @@
     background-repeat: no-repeat;
     background-position: 93% -15%;
     background-color: clr("primary", "300");
+
+    @include mq(medium) {
+      background-position: 90% -5%;
+    }
   }
 }

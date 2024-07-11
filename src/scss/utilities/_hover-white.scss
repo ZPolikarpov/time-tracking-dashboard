@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.hover-white {
+  transition: 0s;
+  &:is(:hover, :focus) {
+    filter: brightness(0) invert(1);
+  }
+}
