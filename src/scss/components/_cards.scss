@@ -14,27 +14,45 @@
   }
 
   &[data-category="Work"] {
-    background-color: clr("primary", "250")
+    background-image: url("./src/assets/images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: 93% -15%;
+    background-color: clr("primary", "250");
   }
 
   &[data-category="Play"] {
-    background-color: clr("primary", "150")
+    background-image: url("./src/assets/images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 93% -5%;
+    background-color: clr("primary", "150");
   }
 
   &[data-category="Study"] {
-    background-color: clr("primary", "200")
+    background-image: url("./src/assets/images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position: 93% -5%;
+    background-color: clr("primary", "200");
   }
 
   &[data-category="Exercise"] {
-    background-color: clr("primary", "400")
+    background-image: url("./src/assets/images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: 93% -5%;
+    background-color: clr("primary", "400");
   }
 
   &[data-category="Social"] {
-    background-color: clr("primary", "550")
+    background-image: url("./src/assets/images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position: 93% -30%;
+    background-color: clr("primary", "550");
   }
 
   &[data-category="Self Care"] {
-    background-color: clr("primary", "300")
+    background-image: url("./src/assets/images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position: 93% -15%;
+    background-color: clr("primary", "300");
   }
 
   &__heading {
