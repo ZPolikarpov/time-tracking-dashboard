@@ -1,56 +1,105 @@
-# Time tracking dashboard
 
-This is a solution to the time tracking dashboard challenge on Frontend Mentor.
+# Frontend Mentor Challenge - ime tracking dashboard
 
-### Links
+This repository contains my solution for a Frontend Mentor challenge. The challenge required building a fully responsive website from a given Figma design.
+
+## Links
 
 Solution URL: [Solution - Frontend Mentor](https://www.frontendmentor.io/solutions/time-tracking-dashboard-cmr3HqAB8J)\
-Live Site URL: [Live Site](https://zpolikarpov.github.io/time-tracking-dashboard/)\
+Live Site URL: [Live Site](https://zpolikarpov.github.io/time-tracking-dashboard/)
+
+## Built With
+- **Vite** - A fast frontend build tool for modern web development
+- **React** - JavaScript library for building user interfaces
+- **SCSS** - CSS preprocessor for writing cleaner and more maintainable styles
+- **HTML** - Markup language for structuring the website
+- **JavaScript (JS)** - For dynamic behavior and interactivity
+
+## Features
+- **Fully Responsive Design**: Adapts seamlessly to different screen sizes and devices.
+- **Pixel-Perfect Implementation**: Faithful to the original Figma design provided.
+- **Interactive Elements**: Includes dynamic behaviors for an engaging user experience.
+
+## Getting Started
+
+### Prerequisites
+Ensure you have the following installed:
+- Node.js
+- npm (Node Package Manager) or Yarn
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ZPolikarpov/time-tracking-dashboard.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd repository-name
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the Project
+1. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+2. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite).
+
+### Building for Production
+1. Generate the production build:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+2. Serve the production build:
+   ```bash
+   npm run preview
+   # or
+   yarn preview
+   ```
+
+## File Structure
+```
+.
+├── public/            # Static assets
+├── src/
+│   ├── assets/       # Images, icons, etc.
+│   ├── components/   # Reusable React components
+│   ├── styles/       # SCSS stylesheets
+│   ├── App.jsx       # Main application file
+│   └── main.jsx      # Entry point
+├── index.html        # Main HTML file
+├── package.json      # Dependencies and scripts
+└── vite.config.js    # Vite configuration
+```
+
+## Challenges Encountered
+- Implementing a fully responsive layout across various screen sizes.
+- Ensuring pixel-perfect alignment with the Figma design.
+- Managing SCSS styles for modular and maintainable code.
+
+## What I Learned
+- Improved my skills in building responsive designs using SCSS and React.
+- Gained experience with Vite for efficient development and build processes.
+- Strengthened my ability to translate Figma designs into code.
+
+## Acknowledgments
+- [Frontend Mentor](https://www.frontendmentor.io/) for providing the design challenge.
+- [Vite Documentation](https://vitejs.dev/) for their comprehensive guide.
+- [React Documentation](https://reactjs.org/) for helpful resources.
+
+## Contributing
+Feel free to fork this repository and submit a pull request if you would like to suggest improvements or fixes.
+
+## License
+This project is licensed under the MIT License.
 
 
-To run the project:
-
-- Clone the repository
-- Console: npm install
-- Console: npm run dev
-
-## Technologies
-
-This project uses Vite with React and scss.
-
-### scss
-
-There is a custom scss template in place. The template is built from Kevin Powells
-[Beyond CSS](https://www.beyondcss.dev) course. Vite handles PurgeCSS to remove unused SCSS code. There's also a PostCSS module that makes the CSS file readable to most relevant browsers. Here's a short overview to the file structure:
-
-#### abstracts
-
-Handles variables, mixins and functions. Use this to make changes to the present design without creating new html or adjusting the present one.
-
-#### base
-
-Handles general, project-wide styles. You can find local fonts and css variables here as well.
-
-#### components
-
-Handles css for website components, such as buttons or cards. Use when creating new objects, that are (or most likely will be) reused throughout the website.
-
-#### layout
-
-Handles css for website layouts, such as grids or section. Use when creating new layouts, that are (or most likely will be) reused throughout the website.
-
-#### utilities
-
-Utility classes that you can add to your html without having to create new components or layouts. Use for one-off components/layouts or minor adjustments that wouldn't justify creating a new component/layout.
-
-#### vendor
-
-Folder for 3rd party libraries.
-
-### Vite
-
-The project uses Vite to create a React app. Currently Vite is just used to create the environment and for PurgeCSS and PostCSS.
-
-### React
-
-Not used for anything specific as of now. I will start learning and working with React later down the line, so I figured I might as well include it in my template.
