@@ -1,5 +1,5 @@
 
-# Frontend Mentor Challenge - ime tracking dashboard
+# Frontend Mentor Challenge - Time tracking dashboard
 
 This repository contains my solution for a Frontend Mentor challenge. The challenge required building a fully responsive website from a given Figma design.
 
@@ -73,7 +73,7 @@ Ensure you have the following installed:
 ├── src/
 │   ├── assets/       # Images, icons, etc.
 │   ├── components/   # Reusable React components
-│   ├── styles/       # SCSS stylesheets
+│   ├── scss/       # SCSS stylesheets
 │   ├── App.jsx       # Main application file
 │   └── main.jsx      # Entry point
 ├── index.html        # Main HTML file
